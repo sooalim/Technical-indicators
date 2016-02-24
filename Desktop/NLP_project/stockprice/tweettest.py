@@ -15,7 +15,7 @@ ACCESS_TOKEN = twitter.obtain_access_token()
 twitter = Twython(TWITTER_APP_KEY, access_token=ACCESS_TOKEN)
 
 # Search
-searches = twitter.search(q = '$ATVI', count = 100)
+searches = twitter.search(q = '$CERN', count = 100)
 
 print searches
 tweets = searches['statuses']
